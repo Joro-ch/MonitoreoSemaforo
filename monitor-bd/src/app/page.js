@@ -11,7 +11,7 @@ export default function Home() {
           <ul className="appHeaderUl">
             <li className="appHeaderLi"> <About /> </li>
             <h1 className="appHeaderTitle"> Monitoreo de una Base de Datos </h1>
-            <li className="appHeaderLi"> <Button buttonName = {"Lori"} /> </li>
+            <li className="appHeaderLi"> <Button buttonName = {"Extra"} /> </li>
           </ul>
         </nav>
       </header>
@@ -19,11 +19,8 @@ export default function Home() {
         <TrafficLight/>
       </aricle>
       <aside className="appAside">
-        Hola
+        Aquí va algo, pero hay que ver el que
       </aside>
-      <footer className="appFooter">
-        Hola
-      </footer>
     </main>
   )
 }
