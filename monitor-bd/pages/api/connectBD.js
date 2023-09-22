@@ -9,23 +9,28 @@ async function connectToOracle() {
     const connection = await oracledb.getConnection(dbConfig);
 
     // Consulta de prueba
-    const sql = 'SELECT * FROM personas'; 
-    const result = await connection.execute(sql);
+    // const insertSql = 'INSERT INTO personas VALUES (8, 8, 8)';
+    // await connection.execute(insertSql);
 
+    // await connection.commit();
+
+    // Consulta de prueba (opcional)
+    const selectSql = 'SELECT SUM(bytes) / 1048576 AS total_size_in_mb FROM v$sgastat';
+    const result = await connection.execute(selectSql);
     // Imprimir resultados en la consola
-    console.log('Resultado de la consulta:');
-    for (const row of result.rows) {
-      console.log(row);
-    }
+    // console.log('Resultado de la consulta:');
+    // for (const row of result.rows) {
+    //   console.log(row);
+    // }
 
     // Cerrar la conexión
     await connection.close();
-    
-    return result.rows; 
+
+    return result.rows[0][0];
 
   } catch (error) {
     console.error('Error al conectar a Oracle:', error);
-    throw error; 
+    throw error;
   }
 }
 
