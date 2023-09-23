@@ -4,6 +4,7 @@ import About from "../../components/About"
 import Button from "../../components/Button"
 import "../../styles/app.css"
 import Table from "../../components/Table"
+import GraphicSGA from "../../components/GraphicSGA";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     // Llama a la API para obtener los datos de Oracle aquí
-    fetch('/api/db') // Asegúrate de que la ruta sea correcta
+    fetch('/api/tableSpacesInfo') // Asegúrate de que la ruta sea correcta
       .then((response) => response.json())
       .then((data) => {
         if (data.data) {
@@ -36,6 +37,9 @@ export default function Home() {
         </nav>
       </header>
       <aricle className="appBody">
+        <div className="appBodyDiv">
+          <GraphicSGA />
+        </div>
         <TrafficLight/>
       </aricle>
       <aside className="appAside">
