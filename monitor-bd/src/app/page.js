@@ -2,6 +2,7 @@ import TrafficLight from "../../components/TrafficLight"
 import About from "../../components/About"
 import Button from "../../components/Button"
 import "../../styles/app.css"
+import PantallaTS from "../../components/PantallaTS"
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
       <aricle className="appBody">
         <TrafficLight/>
       </aricle>
+      <div>
+        <PantallaTS/>
+      </div>
       <aside className="appAside">
         Aquí va algo, pero hay que ver el que
       </aside>
