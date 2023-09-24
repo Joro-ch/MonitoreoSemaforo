@@ -7,6 +7,7 @@ import Table from "../../components/Table"
 import GraphicSGA from "../../components/GraphicSGA";
 import { useState, useEffect } from "react";
 import PantallaTS from "../../components/PantallaTS";
+import Table2 from "../../components/Table2";
 
 export default function Home() {
 
@@ -40,6 +41,9 @@ export default function Home() {
       <aricle className="appBody">
         <div className="appBodyDiv">
           <GraphicSGA />
+          <Table2/>
+        </div>
+        <div className="appBodyDiv">
         </div>
         <TrafficLight/>
         <div className="appBodyDiv">
