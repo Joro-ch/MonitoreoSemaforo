@@ -6,6 +6,7 @@ import "../../styles/app.css"
 import Table from "../../components/Table"
 import GraphicSGA from "../../components/GraphicSGA";
 import { useState, useEffect } from "react";
+import PantallaTS from "../../components/PantallaTS";
 
 export default function Home() {
 
@@ -41,6 +42,9 @@ export default function Home() {
           <GraphicSGA />
         </div>
         <TrafficLight/>
+        <div className="appBodyDiv">
+          <PantallaTS/>
+        </div>
       </aricle>
       <aside className="appAside">
         <Table data={dataFromOracle}/>
