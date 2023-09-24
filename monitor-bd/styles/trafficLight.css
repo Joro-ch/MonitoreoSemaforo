@@ -1,8 +1,8 @@
 
 .trafficLight {
-    width: 250px;
-    height: 450px;
-    background-color: #aaa;
+    width: 100px;
+    height: 240px;
+    background-color: #242424;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
