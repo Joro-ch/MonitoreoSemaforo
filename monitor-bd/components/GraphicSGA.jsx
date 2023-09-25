@@ -93,7 +93,7 @@ export function GraphicSGA() {
         <Line 
             options={options}
             data={data}
-            style={{ maxWidth: '25vw', maxHeight: '50vh' }} // Ajusta el ancho y alto máximo según tus preferencias
+            style={{ maxWidth: '30vw', maxHeight: '30vh' }} // Ajusta el ancho y alto máximo según tus preferencias
         />
     );
 }

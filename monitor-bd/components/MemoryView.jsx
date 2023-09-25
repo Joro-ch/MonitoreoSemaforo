@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import View from "./View";
 import PantallaTS from "./PantallaTS";
 import Table from "./Table";
-import "../styles/sgaview.css";
+import "../styles/memoryview.css";
 
 export default function MemoryView () {
     const [dataFromOracle, setDataFromOracle] = useState([]);
@@ -22,10 +22,10 @@ export default function MemoryView () {
     }, []);
 
     return (
-        <View>
+        <View className="view" title="Memory View">
             <div className="memoryview">
-                <PantallaTS/>
-                <Table data={dataFromOracle}/>
+                <PantallaTS className="memoryviewTS" />
+                <Table className="memoryviewTable" data={dataFromOracle}/>
             </div>
         </View>
     );

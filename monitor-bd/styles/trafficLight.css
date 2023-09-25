@@ -1,7 +1,7 @@
 
 .trafficLight {
-    width: 150px;
-    height: 350px;
+    width: 100px;
+    height: 250px;
     background-color: #aaa;
     border-radius: 10px;
     display: flex;

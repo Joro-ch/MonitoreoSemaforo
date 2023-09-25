@@ -6,7 +6,8 @@
     display: grid;
     width: 50vw;
     height: 70vh;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
     align-items: center;
     justify-items: center;
     margin: 5%;
@@ -14,8 +15,15 @@
 
 .sgaviewGraphic {
     grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
 
 .sgaviewTrafficLight {
     grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.sgaviewTable {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
 }

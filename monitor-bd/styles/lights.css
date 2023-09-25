@@ -1,7 +1,7 @@
 
 .light {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transition: background-color 0.3s;
 }

@@ -1,3 +1,4 @@
+
 import MemoryView from "../../components/MemoryView";
 import Nav from "../../components/Nav";
 import SGAView from "../../components/SGAView";
@@ -8,6 +9,7 @@ export default function Home() {
     <main className = "app">
       <Nav />
       <SGAView />
+      <MemoryView />
     </main>
   )
 }
