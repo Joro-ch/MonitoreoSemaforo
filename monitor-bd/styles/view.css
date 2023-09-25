@@ -1,0 +1,11 @@
+.view {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.viewTitle {
+    grid: 1 / 2;
+}

@@ -1,0 +1,21 @@
+.view {
+    margin-top: 2%;
+}
+
+.sgaview {
+    display: grid;
+    width: 50vw;
+    height: 70vh;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    margin: 5%;
+}
+
+.sgaviewGraphic {
+    grid-column: 1 / 2;
+}
+
+.sgaviewTrafficLight {
+    grid-column: 2 / 3;
+}

@@ -90,9 +90,10 @@ export function GraphicSGA() {
 
 
     return (
-        <Line
+        <Line 
             options={options}
             data={data}
+            style={{ maxWidth: '25vw', maxHeight: '50vh' }} // Ajusta el ancho y alto máximo según tus preferencias
         />
     );
 }
