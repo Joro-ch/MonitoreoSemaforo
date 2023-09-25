@@ -1,4 +1,4 @@
-import next from "next";
+"use client";
 import "../styles/trafficLight.css"
 import Light from "./Light";
 import { useState, useEffect } from "react";
