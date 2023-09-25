@@ -7,6 +7,17 @@ export default async (req, res) => {
       const connection = await oracledb.getConnection(dbConfig);
   
       // Usar AUDIT ALL; por cualquier cosa
+      //ALTER SYSTEM SET AUDIT_SYS_OPERATIONS=TRUE SCOPE=SPFILE; y este para que se guarde las sentecias hechas por sistem
+      const query1 = `
+      SELECT  TO_CHAR(timestamp, 'YYYY-MM-DD'),
+      TO_CHAR(timestamp, 'HH24:MI:SS'),
+      SESSION_CPU,
+      SESSIONID, 
+      ACTION_NAME
+      FROM DBA_AUDIT_TRAIL
+      where action_name IN ('SELECT', 'INSERT', 'UPDATE', 'DELETE')
+    `;
+    await connection.execute(query1);
 
       const query = `
         SELECT  TO_CHAR(timestamp, 'YYYY-MM-DD'),
