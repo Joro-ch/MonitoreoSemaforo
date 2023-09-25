@@ -1,0 +1,21 @@
+.view {
+    margin-top: 2%;
+}
+
+.memoryview {
+    display: grid;
+    width: 40vw;
+    height: 70vh;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+    justify-items: center;
+    margin: 5%;
+}
+
+.memoryviewTS {
+    grid-row: 1 / 2;
+}
+
+.memoryviewTable {
+    grid-row: 2 / 3;
+}
